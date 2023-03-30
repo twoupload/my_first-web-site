@@ -1,10 +1,20 @@
+function plus(a,b) {
+    console.log(a+b);
+}
+
+function divied(a,b) {
+    console.log(a/b);
+}
+
+plus(5,5);
+divied(10,4);
+
 const player = {
-    name:"nico",
-    points: 10,
-    fat: true,
+    name: "nico",
+    sayHello: function(otherPersonsName){
+        console.log("hello! " + otherPersonsName + " nice to meet you!");
+    },
 };
 
-console.log(player);
-player.lastName = "potato";
-player.points= player.points+15;
-console.log(player);
+player.sayHello("lynn");
+player.sayHello("nico");
