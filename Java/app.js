@@ -1,20 +1,27 @@
-function plus(a,b) {
-    console.log(a+b);
-}
+const cal = {
+    add: function(a,b) {
+        console.log(a+b);
+    },
 
-function divied(a,b) {
-    console.log(a/b);
-}
+    min: function(a,b) {
+        console.log(a-b);
+    },
 
-plus(5,5);
-divied(10,4);
+    div: function(a,b) {
+        console.log(a/b);
+    },
 
-const player = {
-    name: "nico",
-    sayHello: function(otherPersonsName){
-        console.log("hello! " + otherPersonsName + " nice to meet you!");
+    mul: function(a,b) {
+        console.log(a*b);
+    },
+
+    pow: function(a,b) {
+        console.log(a**b);
     },
 };
 
-player.sayHello("lynn");
-player.sayHello("nico");
+cal.add(5,3);
+cal.min(59,33);
+cal.div(5,8);
+cal.mul(5,3);
+cal.pow(2,10);
