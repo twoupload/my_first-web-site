@@ -3,11 +3,14 @@
 <html lang = "en">
     <head>
         <meta charset="UTF-8" />
+        <!-- 모바일 브라우저의 뷰포트 크기 조절-->
+        <!--초기 화면 배율(initail=scale) 설정 + 장치너비(width=divice-width)-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"/>
         <title>Momentum App</title>
     </head>
     <body>
+        <!--class hidden으로 css 통해 login-form 숨김.-->
         <form class="hidden" id="login-form">
             <input
                 required
@@ -19,6 +22,7 @@
         </form>
         <!--시계를 추가-->
         <h2 id="clock">00:00:00</h2>
+        <!--greeting id를 css 통해 login-form 숨김.-->
         <h1 class="hidden" id="greeting"></h1>
         <script src="js/greetings.js"></script>
         <!--시계와 관련된 JS import-->
