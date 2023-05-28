@@ -19,7 +19,7 @@ function deleteTodo(event) { // 버튼 삭제
     const li = event.target.parentElement; // 어떤 x가 클릭되었는지 알 수 있음.
     li.remove(); // 리스트 삭제
     // filter는 forEach와 비슷. filter는 return값이 필요.
-    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li,id)); // 화살표 함수. 속도차이 없음.
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id)); // 화살표 함수. 속도차이 없음.
     saveToDos();
 }
 
